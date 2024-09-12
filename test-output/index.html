@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="checkOpenPositionsDepartment">checkOpenPositionsDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods skipped suite-All_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods skipped suite-All_Test_Suite"> (show)</a> <!-- show-methods skipped suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-All_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="openJobDescriptionPage">openJobDescriptionPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="SelectLocationForJob">SelectLocationForJob</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="SelectLocationForJob">SelectLocationForJob</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="isOpenQAJobsPageOpened">isOpenQAJobsPageOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="isOpenedQualityAssuranceJobsPage">isOpenedQualityAssuranceJobsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="isOpenedSeeAllTeamsSection">isOpenedSeeAllTeamsSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="isThereOpenQAPosition">isThereOpenQAPosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="openCareersPage">openCareersPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="insider.automation.ui.Tests.Scenario1" class="method navigator-link" hash-for-method="openHomePage">openHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">insider.automation.ui.Tests.Scenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOpenPositionsDepartment">
+                  </a> <!-- checkOpenPositionsDepartment -->
+                  <span class="method-name">checkOpenPositionsDepartment</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@data-team=&apos;qualityassurance&apos;]//span (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: /var/folders/pq/xs3n_zk14lz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64315/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae0f058047682b36c2b388855a86254c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at insider.automation.ui.Pages.OpenQAJobsListPage.getOpenPositionsDepartment(OpenQAJobsListPage.java:82)
+	at insider.automation.ui.Tests.Scenario1.checkOpenPositionsDepartment(Scenario1.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">insider.automation.ui.Tests.Scenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openJobDescriptionPage">
+                  </a> <!-- openJobDescriptionPage -->
+                  <span class="method-name">openJobDescriptionPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method insider.automation.ui.Tests.Scenario1.openJobDescriptionPage() on instance insider.automation.ui.Tests.Scenario1@5400db36 depends on not successfully finished methods 
+[insider.automation.ui.Tests.Scenario1.checkOpenPositionsDepartment() on instance insider.automation.ui.Tests.Scenario1@5400db36]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-skipped -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">insider.automation.ui.Tests.Scenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectLocationForJob">
+                  </a> <!-- SelectLocationForJob -->
+                  <span class="method-name">SelectLocationForJob</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectLocationForJob">
+                  </a> <!-- SelectLocationForJob -->
+                  <span class="method-name">SelectLocationForJob</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isOpenQAJobsPageOpened">
+                  </a> <!-- isOpenQAJobsPageOpened -->
+                  <span class="method-name">isOpenQAJobsPageOpened</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isOpenedQualityAssuranceJobsPage">
+                  </a> <!-- isOpenedQualityAssuranceJobsPage -->
+                  <span class="method-name">isOpenedQualityAssuranceJobsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isOpenedSeeAllTeamsSection">
+                  </a> <!-- isOpenedSeeAllTeamsSection -->
+                  <span class="method-name">isOpenedSeeAllTeamsSection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isThereOpenQAPosition">
+                  </a> <!-- isThereOpenQAPosition -->
+                  <span class="method-name">isThereOpenQAPosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openCareersPage">
+                  </a> <!-- openCareersPage -->
+                  <span class="method-name">openCareersPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openHomePage">
+                  </a> <!-- openHomePage -->
+                  <span class="method-name">openHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;insider.automation.ui.Util.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;/Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;insider.automation.ui.Tests.Scenario1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- /Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024 --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">/Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkOpenPositionsDepartment')
+data.setCell(0, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(0, 3, 31233);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SelectLocationForJob')
+data.setCell(1, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(1, 3, 3110);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openCareersPage')
+data.setCell(2, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(2, 3, 3061);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'openHomePage')
+data.setCell(3, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(3, 3, 1999);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'isOpenedQualityAssuranceJobsPage')
+data.setCell(4, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(4, 3, 1765);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'isOpenQAJobsPageOpened')
+data.setCell(5, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(5, 3, 1359);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'isOpenedSeeAllTeamsSection')
+data.setCell(6, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(6, 3, 1066);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SelectLocationForJob')
+data.setCell(7, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(7, 3, 27);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'isThereOpenQAPosition')
+data.setCell(8, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(8, 3, 15);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'openJobDescriptionPage')
+data.setCell(9, 2, 'insider.automation.ui.Tests.Scenario1')
+data.setCell(9, 3, 0);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">insider.automation.ui.Tests.Scenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openHomePage</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openCareersPage</span>
+                <span class="method-start">2009 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isOpenedSeeAllTeamsSection</span>
+                <span class="method-start">5070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isOpenedQualityAssuranceJobsPage</span>
+                <span class="method-start">6136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isOpenQAJobsPageOpened</span>
+                <span class="method-start">7902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SelectLocationForJob</span>
+                <span class="method-start">9262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SelectLocationForJob</span>
+                <span class="method-start">12373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isThereOpenQAPosition</span>
+                <span class="method-start">12401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkOpenPositionsDepartment</span>
+                <span class="method-start">12416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44896 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">openJobDescriptionPage</span>
+                <span class="method-start">44896 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

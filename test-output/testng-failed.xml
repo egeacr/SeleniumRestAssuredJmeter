@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="insider.automation.ui.Util.Listener"/>
+  </listeners>
+  <test thread-count="5" name="/Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024(failed)">
+    <classes>
+      <class name="insider.automation.ui.Tests.Scenario1">
+        <methods>
+          <include name="checkOpenPositionsDepartment"/>
+          <include name="openHomePage"/>
+          <include name="openJobDescriptionPage"/>
+          <include name="isOpenedSeeAllTeamsSection"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="openCareersPage"/>
+          <include name="isThereOpenQAPosition"/>
+          <include name="isOpenQAJobsPageOpened"/>
+          <include name="SelectLocationForJob"/>
+          <include name="isOpenedQualityAssuranceJobsPage"/>
+        </methods>
+      </class> <!-- insider.automation.ui.Tests.Scenario1 -->
+    </classes>
+  </test> <!-- /Users/egeacar/Desktop/insiderQAEngineerTask/SeleniumRestAssuredJmeter_InsiderTask_2024(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
