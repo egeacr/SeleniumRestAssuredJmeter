@@ -9,6 +9,8 @@
         <classes>
             <class name="insider.automation.ui.Tests.Scenario1">
             </class>
+            
+            <class name="insider.automation.api.test.APITestScenarios"></class>
         </classes>
     </test>
 </suite>
